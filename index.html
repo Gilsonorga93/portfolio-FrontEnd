@@ -14,45 +14,205 @@
    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/0dc43e035d.js" crossorigin="anonymous"></script>
 
-    <script src="./js/script.js"></script>
 </head>
 
 <body>
-
   <div class="main-container d-flex">
+
+    <!-- Inicio side bar -->
     <div class="sidebar" id="side_nav">
-      <div class="header-box px-2 pt-3 pb-4">
-        <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-2">GO</span> <span class="text-white">Portfolio</span></h1>
+      <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+        <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-3 ms-5">Portfolio</span></h1>
         <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="fa-solid fa-bars-staggered"></i></button>
       </div>
 
       <ul class="list-unstyled px-2">
-        <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house"></i>Inicio</a></li>
-        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
-          <i class="fa-solid fa-address-card"></i>Experiencia</a></li>
-        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-graduation-cap"></i>Educacion</a></li>
-        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+        <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house me-2"></i>Inicio</a></li>
+        <li class=""><a href="#exp" class="text-decoration-none px-3 py-2 d-block">
+          <i class="fa-solid fa-address-card"></i> Experiencia</a></li>
+        <li class=""><a href="#edu" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-graduation-cap me-2"></i>Educacion</a></li>
+        <li class=""><a href="#cont" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-envelope me-2"></i>Contacto</a></li>
       </ul>
       <hr class="h-color mx-2">
 
       <ul class="list-unstyled px-2">
-        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-gear"></i>Configuracion</a></li>
-      </ul>
-
+        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-gear me-2"></i>Configuracion</a></li>
     </div>
-    <div class="content">
-    
+    <!-- Fin sidebar -->
 
-    <div id="resumen"><p>asdafg</p></div>
+    <!-- Inicio barra de arriba -->
+    <div class="content" id="arriba">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between d-md-none d-block">
+            <button class="btn px-1 py-0 open-btn me-2"><i class="fa-solid fa-bars-staggered"></i></button>
+            <a class="navbar-brand fs-4" href="#"><span class="bg-dark rounded px-2 py-0 text-white ms-2">Portfolio</span></a>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" href="https://www.linkedin.com/in/gilson-ortiz-garcia-2a8761217/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin barra de arriba -->    
+
+      <!-- Inicio sobre mi -->
+      <section class="home py-5 ms-3">
+        <div class="container-lg">
+          <div class="row align-items-center align-content-center">
+            <div class="col-md-6 mt-5 mt-md-0">
+              <div class="home-img text-center">
+                <img src="./img/Captura.PNG" class="rounded-circle img-thumbnail" id="foto" alt="profile img">
+              </div>
+            </div>
+            <div class="col-md-6 mt-md-0 order-md-first">
+              <div class="home-text">
+                <h1 class="text-danger text-uppercase fs-1 fw-bold">Gilson Ortiz</h1>
+                <h2 class="fs-4">Sobre mi</h2>
+                <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi maxime officiis accusamus provident delectus non itaque atque esse, ipsa ipsum, in, est fugit sequi molestias facere dicta temporibus voluptatem dignissimos?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin sobre mi -->
+
+        <br>
+
+       <!-- Inicio Exp -->
+       <section id="exp">
+         <div class="card border-light mb-3" style="max-width: auto;"> 
+          <div class="card-header bg-danger"></div>
+           <div class="card-body">
+            <h2 class="fs-4">Experiencia</h2>
+            <div class="row row-cols-1 d-flex">
+             <div class="col">
+              <div class="card mb-5 my-2">
+               <div class="row">
+                <div class="col-3">
+                 <img src="./img/datawise.jpg" class="img-block d-block mx-auto">
+                </div>
+               <div class="col-9">
+                <p class="text-uppercase fs-4 fw-bold">Help Desk jr</p>
+                <p class="h6">Datawise - Jornada completa</p>
+                <p class="h6"><small class="text-muted">ene. 2022 - actualidad</small></p>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="col">
+             <div class="card mb-5 my-2">
+              <div class="row">
+               <div class="col-3">
+                <img src="./img/datawise.jpg" class="img-block d-block mx-auto">
+               </div>
+              <div class="col-9">
+               <p class="text-uppercase fs-4 fw-bold">Logistica y distribucion</p>
+               <p class="h6">Porteñitos Cooperativa - Jornada parcial</p>
+               <p class="h6"><small class="text-muted">ago. 2020 - jun. 2022</small></p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+       </section>
+       <!-- Fin Exp -->
+       
+       <!-- Inicio Educacion -->
+       <section id="edu">
+        <div class="card border-light mb-3" style="max-width: auto;"> 
+         <div class="card-header bg-danger"></div>
+          <div class="card-body">
+           <h2 class="fs-4">Educacion</h2>
+           <div class="row row-cols-1 d-flex">
+            <div class="col">
+             <div class="card mb-5 my-2">
+              <div class="row">
+               <div class="col-3">
+                <img src="./img/utn.jpg" class="img-block d-block mx-auto">
+               </div>
+              <div class="col-9">
+               <p class="text-uppercase fs-4 fw-bold">Ing. Sistemas</p>
+               <p class="h6">Universidad Tecnologica Nacional BA</p>
+               <p class="h6"><small class="text-muted">2020 - actualidad</small></p>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="col">
+            <div class="card mb-5 my-2">
+             <div class="row">
+              <div class="col-3">
+               <img src="./img/EducacionIT.jpg" class="img-block d-block mx-auto">
+              </div>
+             <div class="col-9">
+              <p class="text-uppercase fs-4 fw-bold">Web Full Stack con Java</p>
+              <p class="h6">Educacion IT</p>
+              <p class="h6"><small class="text-muted">abr. 2021 - nov. 2021</small></p>
+             </div>
+            </div>
+           </div>
+           <div class="col">
+            <div class="card mb-5 my-2">
+             <div class="row">
+              <div class="col-3">
+                <img src="./img/utn.jpg" class="img-block d-block mx-auto">
+              </div>
+             <div class="col-9">
+              <p class="text-uppercase fs-4 fw-bold">Ing. Mecanica</p>
+              <p class="h6">Universidad Tecnologica Nacional BA</p>
+              <p class="h6"><small class="text-muted">2015 - actualidad</small></p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+       <!-- Fin Educacion -->
+
+       <!-- Inicio Contacto -->
+       <section id="cont">
+         <div class="card border-light mb-3" style="max-width: auto;"> 
+         <div class="card-header bg-danger"></div>
+           <div class="card-body">
+           <h2 class="fs-4">Contacto</h2>
+           <div class="row row-cols-1 d-flex">
+            <ul class="list-unstyled">
+              <li class="my-1"><i class="fa-sharp fa-solid fa-envelopes-bulk me-2 fs-4"></i>Email: <a href="">gilsonorga@gmail.com</a></li>
+              <li class="my-1"><i class="fa-sharp fa-solid fa-phone me-2 fs-4"></i>Telefono: +54 16564665</li>
+            </ul>
+           </div>
+           
+           </div>
+         </div>
+         </div>
+       </section>
+       <!-- Fin Contacto -->
+
+      </section>
+
+      <!-- Inicio Footer -->
+      <section class="footer">
+        <div class="fixed-bottom text-center px-2" style="background-color: #000;">
+          <a class="fs-6" href="#arriba"><span class="bg-white text-dark rounded shadow px-3 ms-5">Volver Arriba</span></a>
+        </div>
+      </section>
+      <!-- Fin Contacto -->
 
     </div>
   </div>
 
-  
+ 
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="./js/sidebar.js"></script>
 
 </body>
 </html>
